@@ -1,0 +1,7 @@
+/home/fptlab/Documents/traffic_project_models/stop_light/build/CMakeFiles/install/strip.dir
+/home/fptlab/Documents/traffic_project_models/stop_light/build/CMakeFiles/install.dir
+/home/fptlab/Documents/traffic_project_models/stop_light/build/CMakeFiles/list_install_components.dir
+/home/fptlab/Documents/traffic_project_models/stop_light/build/CMakeFiles/rebuild_cache.dir
+/home/fptlab/Documents/traffic_project_models/stop_light/build/CMakeFiles/edit_cache.dir
+/home/fptlab/Documents/traffic_project_models/stop_light/build/CMakeFiles/install/local.dir
+/home/fptlab/Documents/traffic_project_models/stop_light/build/CMakeFiles/emissive_plugin.dir

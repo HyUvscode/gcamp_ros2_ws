@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- A testing model that includes the Velodyne sensor model -->
+    <model name="my_velodyne">
+      <include>
+        <uri>model://velodyne_hdl32</uri>
+      </include>
+
+      <!-- Attach the plugin to this model -->
+      <plugin name="velodyne_control" filename="libvelodyne_plugin.so"/>
+    </model>
+    <model name='stop_light'>
+      <static>1</static>
+      <pose>-0.145031 -4.87535 1 0 -0 0</pose>
+      <link name='light_traffic'>
+      
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light/meshes/stop_light.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='frame'>
+          <geometry>
+            <mesh>
+              <uri>model://stop_light/meshes/stop_light.obj</uri>
+              <scale>0.01 0.01 0.01</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        
+        
+        <light name='red' type='spot'>
+          <pose>-0.001123 -0.082251 -0.147514 0 -0 0</pose>
+          <attenuation>
+            <range>30</range>
+            <linear>0.05</linear>
+          </attenuation>
+          <diffuse>0.5 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <spot>
+            <inner_angle>0.3</inner_angle>
+            <outer_angle>0.35</outer_angle>
+            <falloff>1</falloff>
+          </spot>
+          <direction>0 -1 0</direction>
+        </light>
+        
+        <light name='green' type='spot'>
+          <pose>-0.001123 -0.082251 -0.655 0 -0 0</pose>
+          <attenuation>
+            <range>30</range>
+            <linear>0.05</linear>
+          </attenuation>
+          <diffuse>0.5 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <spot>
+            <inner_angle>0.3</inner_angle>
+            <outer_angle>0.35</outer_angle>
+            <falloff>1</falloff>
+          </spot>
+          <direction>0 -1 0</direction>
+        </light>
+        
+        <light name='yellow' type='spot'>
+          <pose>-0.001123 -0.082251 -0.402 0 -0 0</pose>
+          <attenuation>
+            <range>30</range>
+            <linear>0.05</linear>
+          </attenuation>
+          <diffuse>0.5 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <spot>
+            <inner_angle>0.3</inner_angle>
+            <outer_angle>0.35</outer_angle>
+            <falloff>1</falloff>
+          </spot>
+          <direction>0 -1 0</direction>
+        </light>
+        
+        
+        <visual name='red'>
+          <pose>-0.001123 -0.082251 -0.147514 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>1 0 0 1</ambient>
+            <specular>1 0 0 1</specular>
+          </material>
+        </visual>
+        
+        <visual name='yellow'>
+          <pose>-0.001123 -0.082251 -0.402 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>1 1 0 1</ambient>
+            <specular>1 1 0 1</specular>
+          </material>
+        </visual>
+        
+        <visual name='green'>
+          <pose>-0.001123 -0.082251 -0.655 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1012</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://stop_light/materials/scripts/</uri>
+              <uri>model://stop_light/materials/textures/</uri>
+              <name>StopLight/Light</name>
+            </script>
+            <ambient>0 1 0 1</ambient>
+            <specular>0 1 0 1</specular>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+        
+      </link>
+      
+      <plugin name='light_control' filename='libLedPlugin.so'>
+        <enable>true</enable>
+     
+        
+        <light>
+          <id>light_traffic/green</id>
+          <duration>0.1</duration>
+          <interval>0.4</interval>
+          <enable>true</enable>
+          <color>0 1 0</color>
+        </light>
+        <light>
+          <id>light_traffic/red</id>
+          <duration>0.2</duration>
+          <interval>0.4</interval>
+          <enable>true</enable>
+          <color>1 0 0</color>
+        </light>
+        <light>
+          <id>light_traffic/yellow</id>
+          <duration>0.3</duration>
+          <interval>0.4</interval>
+          <enable>true</enable>
+          <color>1 1 0</color>
+        </light>
+      </plugin>
+      <gravity>0 0 -9.8</gravity>
+      
+    </model>
+
+  </world>
+</sdf>
