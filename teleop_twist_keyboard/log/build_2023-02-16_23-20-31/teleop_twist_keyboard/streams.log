@@ -1,0 +1,32 @@
+[0.587s] Invoking command in '/home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard': PYTHONPATH=/home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/prefix_override:/home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/teleop_twist_keyboard build --build-base /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/build install --record /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/install.log --single-version-externally-managed
+[0.788s] running egg_info
+[0.788s] creating build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info
+[0.788s] writing build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/PKG-INFO
+[0.789s] writing dependency_links to build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/dependency_links.txt
+[0.789s] writing entry points to build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/entry_points.txt
+[0.789s] writing requirements to build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/requires.txt
+[0.789s] writing top-level names to build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/top_level.txt
+[0.790s] writing manifest file 'build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/SOURCES.txt'
+[0.818s] reading manifest file 'build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/SOURCES.txt'
+[0.818s] writing manifest file 'build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/SOURCES.txt'
+[0.819s] running build
+[0.819s] running build_py
+[0.819s] creating /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/build
+[0.819s] creating /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/build/lib
+[0.819s] copying teleop_twist_keyboard.py -> /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/build/lib
+[0.819s] running install
+[0.819s] running install_lib
+[0.820s] copying /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/build/lib/teleop_twist_keyboard.py -> /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/lib/python3.8/site-packages
+[0.821s] byte-compiling /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/lib/python3.8/site-packages/teleop_twist_keyboard.py to teleop_twist_keyboard.cpython-38.pyc
+[0.822s] running install_data
+[0.823s] creating /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/share/ament_index
+[0.823s] creating /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/share/ament_index/resource_index
+[0.823s] creating /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/share/ament_index/resource_index/packages
+[0.823s] copying resource/teleop_twist_keyboard -> /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/share/ament_index/resource_index/packages
+[0.823s] copying package.xml -> /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/share/teleop_twist_keyboard
+[0.823s] running install_egg_info
+[0.824s] Copying build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info to /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/lib/python3.8/site-packages/teleop_twist_keyboard-2.3.2-py3.8.egg-info
+[0.825s] running install_scripts
+[0.841s] Installing teleop_twist_keyboard script to /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/lib/teleop_twist_keyboard
+[0.841s] writing list of installed files to '/home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/install.log'
+[0.858s] Invoked command in '/home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard' returned '0': PYTHONPATH=/home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/prefix_override:/home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/install/teleop_twist_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/teleop_twist_keyboard build --build-base /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/build install --record /home/fptlab/gcamp_ros2_ws/src/teleop_twist_keyboard/build/teleop_twist_keyboard/install.log --single-version-externally-managed
